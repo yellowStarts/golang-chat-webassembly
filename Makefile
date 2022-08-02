@@ -1,4 +1,8 @@
 server:
 	go run ./server/main.go
 
-.PHONY:server up
+web-server:
+	cd webSocketServer \
+	&& node webSocketServer.js
+
+.PHONY:server up web-server
